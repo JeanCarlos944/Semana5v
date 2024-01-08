@@ -7,13 +7,20 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  int x = 100;
+  int y = 200;
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(),
+        body: Column(children: [
+          Text(
+            x.toString(),
+            style: TextStyle(color:Colors.red,),
+          ),
+        ]),
       ),
     );
   }
